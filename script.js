@@ -39,3 +39,9 @@ function countAboveFirst() {
 }
 
 console.log(countAboveFirst());
+
+document.getElementById("show").addEventListener("click", function () {
+    document.getElementById("total").textContent = totalNumbers();
+    document.getElementById("big").textContent = largestNumber();
+    document.getElementById("above").textContent = countAboveFirst();
+});
