@@ -25,3 +25,17 @@ function largestNumber() {
 }
 
 console.log(largestNumber());
+
+function countAboveFirst() {
+    let count = 0;
+
+    for (let i = 1; i < numbers.length; i++) {
+        if (numbers[i] > numbers[0]) {
+            count++;
+        }
+    }
+
+    return count;
+}
+
+console.log(countAboveFirst());
