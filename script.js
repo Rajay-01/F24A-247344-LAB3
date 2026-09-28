@@ -11,3 +11,17 @@ function totalNumbers() {
 }
 
 console.log(totalNumbers());
+
+function largestNumber() {
+    let largest = numbers[0];
+
+    for (let number of numbers) {
+        if (number > largest) {
+            largest = number;
+        }
+    }
+
+    return largest;
+}
+
+console.log(largestNumber());
